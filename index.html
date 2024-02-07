@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender Website</title>
+</head>
+<body>
+    
+    <style>
+        #pageDropdown{
+            position: absolute;
+            top:234px;
+            left:740px;
+            background-color: aqua;
+            font-size: 34px;
+
+        }
+        #sel{
+            position: absolute;
+            top:200px;
+            left:500px;
+            font-size: 34px;
+        }
+#f{
+    position: absolute;
+    bottom: 100px;
+    left:560px;
+}
+#h{
+    position:absolute;
+    left:630px;
+    background-color: blueviolet;
+}
+body{
+    background-color: silver;
+}
+    </style>
+<h1 id="f">Created By Vishwa V</h1>
+<h1 id="h">Calendar Software</h1>
+    <p id="sel">Select month</p>
+    <select id="pageDropdown" onchange="redirectToPage()">
+        <option value="">Please Select</option>
+        <option value="https://printabletree.com/wp-content/uploads/January-2024-Floral-Calendar-Printable-1000x600.png">January 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/February-2024-Calendar-Printable-1170x600.png">February 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/March-2024-Floral-Calendar-Printable.png">March 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/April-2024-Calendar-Printable-1170x600.png">April 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/May-2024-Calendar-Printable-1170x600.png">May 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/June-2024-Calendar-Printable-1170x600.png">June 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/July-2024-Calendar-Printable-1170x600.png">July 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/August-2024-Calendar-Printable-1170x600.png">August 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/September-2024-Calendar-Printable-1170x600.png">September 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/October-2024-Calendar-Printable-1170x600.png">October 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/November-2024-Calendar-Printable-1170x600.png">November 2024</option>
+        <option value="https://printabletree.com/wp-content/uploads/December-2024-Calendar-Printable-1170x600.png">December 2024</option>
+
+    </select>
+
+    <script>
+        function redirectToPage() {
+            // Get the selected value from the dropdown
+            var selectedPage = document.getElementById("pageDropdown").value;
+
+            // Redirect to the selected page
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
+
+</body>
+</html>
